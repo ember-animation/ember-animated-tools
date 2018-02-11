@@ -1,0 +1,50 @@
+.eat-motion-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    display: inline-block;
+}
+
+.eat-motion-indicator.active {
+    background-color: green;
+}
+
+.eat-time-control {
+    border: 1px solid black;
+    display: flex;
+    width: 50%;
+    padding: 0.5em 1.5em;
+    flex-direction: column;
+}
+.eat-time-control > div {
+    display: flex;
+    align-items: center;
+}
+.eat-time-control > div > label {
+    min-width: 8em;
+}
+.eat-time-control > div > div {
+    flex: 1;
+    position: relative;
+}
+.eat-time-control--tick-marks {
+    min-height: 1.5em;
+}
+
+.eat-time-control--tick-marks > div {
+    position: absolute;
+    border-left: 1px solid black;
+    height: 1em;
+    margin-top: 1em;
+}
+.eat-time-control--tick-marks > div > button {
+    position: relative;
+    left: -50%;
+    top: -1em;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+}
+.eat-time-control--slider {
+    width: 100%;
+}

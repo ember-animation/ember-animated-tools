@@ -1,3 +1,16 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="demo-app">
 
-{{outlet}}
+  <header>
+    {{motion-indicator}}
+    <button {{action "toggle"}}>Toggle</button>
+    {{time-control}}
+  </header>
+
+
+  {{#animated-if showLeft rules=rules}}
+    <div class="demo-item left">Left</div>
+  {{else}}
+    <div class="demo-item right">Right</div>
+  {{/animated-if}}
+
+</div>
