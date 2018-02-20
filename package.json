@@ -1,17 +1,17 @@
 {
   "name": "ember-animated-tools",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.1.0",
+  "description": "Components that help you develop and debug ember-animated transitions",
   "keywords": [
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Edward Faulkner <edward@eaf4.com>",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/ember-animated/ember-animated-tools",
   "scripts": {
     "build": "ember build",
     "start": "ember serve",
