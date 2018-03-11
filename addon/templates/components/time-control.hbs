@@ -1,13 +1,13 @@
 <div>
-  <label>Speed {{speed}}x</label>
+  <label>Speed {{rounded speedPercent}}%</label>
   <div>
     <div class="eat-time-control--tick-marks">
       {{#each tickMarks as |tickMark|}}
-      <div style={{tickMark.position}}>
-        <button {{action tickMarkChosen tickMark}} >{{tickMark.text}}</button>
+      <div style={{tickMark.position}} {{action tickMarkChosen tickMark }}>
+        <span>{{tickMark.text}}</span>
       </div>
       {{/each}}
     </div>
-    <input class="eat-time-control--slider" type="range" value={{readonly speed}} min=0 max=1 step=0.05 oninput={{action updateSpeed}}  >
+    <input class="eat-time-control--slider" type="range" value={{logSpeed}} min=0 max=200 step=1 oninput={{action updateLogSpeed}}  >
   </div>
 </div>

@@ -10,9 +10,7 @@
 }
 
 .eat-time-control {
-    border: 1px solid black;
     display: flex;
-    width: 50%;
     padding: 0.5em 1.5em;
     flex-direction: column;
 }
@@ -29,6 +27,7 @@
 }
 .eat-time-control--tick-marks {
     min-height: 1.5em;
+    margin-bottom: 4px;
 }
 
 .eat-time-control--tick-marks > div {
@@ -37,14 +36,16 @@
     height: 1em;
     margin-top: 1em;
 }
-.eat-time-control--tick-marks > div > button {
+
+.eat-time-control--tick-marks > div > span {
     position: relative;
-    left: -50%;
-    top: -1em;
-    border: 0;
+    top: -4px;
+    left: 4px;
     cursor: pointer;
-    text-align: center;
 }
+
 .eat-time-control--slider {
     width: 100%;
+    padding: 0;
+    margin: 0;
 }

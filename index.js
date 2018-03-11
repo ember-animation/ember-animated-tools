@@ -8,6 +8,10 @@ const resolve = require('resolve');
 module.exports = {
   name: 'ember-animated-tools',
 
+  isDevelopingAddon() {
+    return process.env.DEV_EMBER_ANIMATED;
+  },
+
   _locateTimeControl() {
     let target = 'ember-animated/addon-test-support/time-control';
     if (this.project.pkg.name === 'ember-animated') {
