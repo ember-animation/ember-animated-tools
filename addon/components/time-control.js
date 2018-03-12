@@ -3,6 +3,8 @@ import layout from '../templates/components/time-control';
 import TimeControl from '../reexported/time-control';
 import { computed } from '@ember/object';
 import { htmlSafe } from '@ember/string';
+import { task } from 'ember-animated';
+import { inject } from '@ember/service';
 
 function toLogSpeed(speedPercent) {
   let percent = speedPercent;
@@ -26,6 +28,7 @@ export default Component.extend({
   layout,
   classNames: ['eat-time-control'],
   speedPercent: 100,
+  motionService: inject('-ea-motion'),
 
   logSpeed: computed('speedPercent', function() {
     return toLogSpeed(this.get('speedPercent'));
@@ -65,11 +68,22 @@ export default Component.extend({
     this._setSpeed(tickMark.value);
   },
   _setSpeed(speed) {
+    this.get('_speedSetter').perform(speed);
+  },
+  _speedSetter: task(function * (speed) {
     if (speed === 100) {
-      // at normal speed, we disable our time control entirely. This
-      // means we won't intefere with things like acceptance tests
-      // that may already want to take over the timing.
+      // at normal speed, we want to disable our time control
+      // entirely. This means we won't intefere with things like
+      // acceptance tests that may already want to take over the
+      // timing.
+      //
+      // But if there's an animation in progress, we must wait until
+      // it's done. Otherwise there will be a jarring jump from our
+      // fake time to the real time.
       if (this.time) {
+        this.time.runAtSpeed(1);
+        this.set('speedPercent', speed);
+        yield this.get('motionService.waitUntilIdle').perform();
         this.time.finished();
         this.time = null;
       }
@@ -82,7 +96,7 @@ export default Component.extend({
       } else {
         this.time.runAtSpeed(speed / 100);
       }
+      this.set('speedPercent', speed);
     }
-    this.set('speedPercent', speed);
-  }
+  }).restartable()
 });
