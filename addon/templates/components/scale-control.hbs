@@ -1,0 +1,11 @@
+Scale:
+
+{{#each (array 50 80 90 100 110 120 150) as |scalePercent|}}
+  <button
+    onclick={{action 'changeScale' scalePercent}}
+    class="animated-tools-button {{if (eq scale scalePercent) 'selected'}}"
+  >
+    {{scalePercent}}%
+  </button>
+{{/each}}
+

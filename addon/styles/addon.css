@@ -84,3 +84,7 @@
     background-color: #ddd;
     border: 1px solid black;
 }
+
+.eat-scale-control button.selected {
+    font-weight: bold;
+}
