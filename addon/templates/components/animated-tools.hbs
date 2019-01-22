@@ -1,7 +1,11 @@
-<div class="animated-tools-launcher" {{action "toggle"}}>
-  {{motion-indicator}}
-  ⏱{{! <--- there's an emoji here, in case your editor doesn't show it }}
-</div>
-<div class="animated-tools-panel">
-  {{time-control}}
-</div>
+{{#unless this.isHidden}}
+  <div class="animated-tools {{if this.isOpen "is-open"}}">
+    <div class="animated-tools-launcher" {{action "toggle"}}>
+      {{motion-indicator}}
+      ⏱{{! <--- there's an emoji here, in case your editor doesn't show it }}
+    </div>
+    <div class="animated-tools-panel">
+      {{time-control}}
+    </div>
+  </div>
+{{/unless}}
