@@ -1,4 +1,3 @@
-/* eslint-env node */
 'use strict';
 const mergeTrees = require('broccoli-merge-trees');
 const path = require('path');
@@ -6,7 +5,7 @@ const Funnel = require('broccoli-funnel');
 const resolve = require('resolve');
 
 module.exports = {
-  name: 'ember-animated-tools',
+  name: require('./package').name,
 
   isDevelopingAddon() {
     return process.env.DEV_EMBER_ANIMATED;
