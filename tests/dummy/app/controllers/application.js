@@ -11,7 +11,7 @@ export default Controller.extend({
   }
 });
 
-function rules(firstTime, oldItems, newItems) {
+function rules({ firstTime, oldItems, newItems }) {
   if (firstTime) { return; }
   if (oldItems[0] < newItems[0]) {
     return toRight;
