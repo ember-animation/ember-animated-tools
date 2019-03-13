@@ -59,11 +59,9 @@ export default Component.extend({
     // always hidden in fastboot
     return typeof FastBoot !== 'undefined' ||
 
-      // always hidden if we're not using the hideUntilKeys feature
-      !this.get('hideUntilKeys') ||
-
-      // or hidden if we haven't been acticvated by the keys yet
-      !localStorage.getItem('animated-tools-activated');
+      // or hidden if we we're using hideUntilKeys and the keys haven't been
+      // pressed yet
+      (this.get('hideUntilKeys') && !localStorage.getItem('animated-tools-activated'));
   }),
 
   actions: {
