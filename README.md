@@ -1,13 +1,6 @@
-# ember-animated-tools
+# Ember Animated Tools
 
-[Short description of the addon.]
-
-
-Compatibility
-------------------------------------------------------------------------------
-
-* Ember.js v2.18 or above
-* Ember CLI v2.13 or above
+A widget useful for slowing down and debugging Ember Animated animations.
 
 
 Installation
@@ -16,7 +9,6 @@ Installation
 ```
 ember install my-addon
 ```
-
 
 Usage
 ------------------------------------------------------------------------------
@@ -35,6 +27,12 @@ Or add it, but keep it hidden until a hotkey reveals it:
 
 Or if you want to use the lower-level pieces, you can directly place the `<MotionIndicator />` or `<TimeControl />` components wherever you like.
 
+
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v2.18 or above
+* Ember CLI v2.13 or above
 
 
 Contributing
