@@ -14,7 +14,7 @@ Installation
 ------------------------------------------------------------------------------
 
 ```
-ember install my-addon
+ember install ember-animated-tools
 ```
 
 
