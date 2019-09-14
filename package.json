@@ -5,7 +5,7 @@
   "keywords": [
     "ember-addon"
   ],
-  "repository": "https://github.com/ember-animated/ember-animated-tools",
+  "repository": "https://github.com/ember-animation/ember-animated-tools",
   "license": "MIT",
   "author": "Edward Faulkner <edward@eaf4.com>",
   "directories": {
