@@ -2,7 +2,7 @@ import Component from '@ember/component';
 import layout from '../templates/components/time-control';
 import TimeControl from '../reexported/time-control';
 import { computed } from '@ember/object';
-import { htmlSafe } from '@ember/string';
+import { htmlSafe } from '@ember/template';
 import { task } from 'ember-animated';
 import { inject } from '@ember/service';
 
