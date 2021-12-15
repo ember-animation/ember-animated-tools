@@ -31,7 +31,7 @@ export default Component.extend({
   motionService: inject('-ea-motion'),
 
   logSpeed: computed('speedPercent', function() {
-    return toLogSpeed(this.get('speedPercent'));
+    return toLogSpeed(this.speedPercent);
   }),
 
   tickMarks: computed(function() {
@@ -49,10 +49,8 @@ export default Component.extend({
   }),
 
   didInsertElement() {
-    let logSpeed = this.get('logSpeed');
-
     // weirdly, ember is not initializing this for me correctly
-    this.element.querySelector('input').value = logSpeed;
+    this.element.querySelector('input').value = this.logSpeed;
   },
 
   willDestroyElement() {
@@ -68,7 +66,7 @@ export default Component.extend({
     this._setSpeed(tickMark.value);
   },
   _setSpeed(speed) {
-    this.get('_speedSetter').perform(speed);
+    this._speedSetter.perform(speed);
   },
   _speedSetter: task(function * (speed) {
     if (speed === 100) {
@@ -83,7 +81,7 @@ export default Component.extend({
       if (this.time) {
         this.time.runAtSpeed(1);
         this.set('speedPercent', speed);
-        yield this.get('motionService.waitUntilIdle').perform();
+        yield this.motionService.waitUntilIdle.perform();
         this.time.finished();
         this.time = null;
       }

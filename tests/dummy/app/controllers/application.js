@@ -6,7 +6,7 @@ export default Controller.extend({
   rules,
   actions: {
     toggle() {
-      this.set('showLeft', !this.get('showLeft'));
+      this.set('showLeft', !this.showLeft);
     }
   }
 });
