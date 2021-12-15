@@ -85,7 +85,8 @@ export default Component.extend({
       if (this.time) {
         this.time.runAtSpeed(1);
         this.set('speedPercent', speed);
-        yield this.motionService.waitUntilIdle.perform();
+        // eslint-disable-next-line ember/no-get
+        yield this.get('motionService.waitUntilIdle').perform();
         this.time.finished();
         this.time = null;
       }
