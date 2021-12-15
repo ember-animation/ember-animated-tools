@@ -3,11 +3,12 @@
   <div>
     <div class="eat-time-control--tick-marks">
       {{#each tickMarks as |tickMark|}}
-      <div style={{tickMark.position}} {{action tickMarkChosen tickMark }}>
-        <span>{{tickMark.text}}</span>
-      </div>
+        {{! template-lint-disable no-inline-styles }}
+        <div style={{tickMark.position}} role="button" {{action tickMarkChosen tickMark }}>
+          <span>{{tickMark.text}}</span>
+        </div>
       {{/each}}
     </div>
-    <input class="eat-time-control--slider" type="range" value={{logSpeed}} min=0 max=200 step=1 oninput={{action updateLogSpeed}}  >
+    <input class="eat-time-control--slider" type="range" value={{logSpeed}} min="0" max="200" step="1" oninput={{action updateLogSpeed}}  >
   </div>
 </div>

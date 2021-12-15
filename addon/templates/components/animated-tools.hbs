@@ -1,6 +1,6 @@
 {{#unless this.isHidden}}
   <div class="animated-tools {{if this.isOpen "is-open"}}" ...attributes>
-    <div class="animated-tools-launcher" {{action "toggle"}}>
+    <div class="animated-tools-launcher" role="button" {{action "toggle"}}>
       {{motion-indicator}}
       ⏱{{! <--- there's an emoji here, in case your editor doesn't show it }}
     </div>
