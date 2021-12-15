@@ -1,7 +1,7 @@
 import Component from '@ember/component';
 import layout from '../templates/components/time-control';
 import TimeControl from '../reexported/time-control';
-import { computed } from '@ember/object';
+import { computed, action } from '@ember/object';
 import { htmlSafe } from '@ember/template';
 import { task } from 'ember-animated';
 import { inject } from '@ember/service';
@@ -59,15 +59,19 @@ export default Component.extend({
       this.time = null;
     }
   },
-  updateLogSpeed(event) {
+
+  updateLogSpeed: action(function (event) {
     this._setSpeed(fromLogSpeed(event.target.valueAsNumber));
-  },
-  tickMarkChosen(tickMark) {
+  }),
+
+  tickMarkChosen: action(function (tickMark) {
     this._setSpeed(tickMark.value);
-  },
+  }),
+
   _setSpeed(speed) {
     this._speedSetter.perform(speed);
   },
+
   _speedSetter: task(function * (speed) {
     if (speed === 100) {
       // at normal speed, we want to disable our time control

@@ -1,13 +1,13 @@
 <div class="demo-app">
 
   <header>
-    {{motion-indicator}}
-    <button {{action "toggle"}}>Toggle</button>
-    {{time-control}}
+    <MotionIndicator />
+    <button type="button" {{on "click" this.toggle}}>Toggle</button>
+    <TimeControl />
   </header>
 
 
-  {{#animated-if showLeft rules=rules}}
+  {{#animated-if this.showLeft rules=this.rules}}
     <div class="demo-item left">Left</div>
   {{else}}
     <div class="demo-item right">Right</div>
