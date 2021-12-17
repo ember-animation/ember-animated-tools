@@ -31,7 +31,7 @@ Or if you want to use the lower-level pieces, you can directly place the `<Motio
 Compatibility
 ------------------------------------------------------------------------------
 
-* Ember.js v3.1 or above
+* Ember.js v3.4 or above
 * Ember CLI v2.13 or above
 
 
