@@ -1,13 +1,14 @@
 import Controller from '@ember/controller';
-import { action } from '@ember/object';
 import { toLeft, toRight } from 'ember-animated/transitions/move-over';
 
 export default Controller.extend({
   showLeft: true,
   rules,
-  toggle: action(function () {
-    this.set('showLeft', !this.showLeft);
-  })
+  actions: {
+    toggle() {
+      this.set('showLeft', !this.showLeft);
+    }
+  }
 });
 
 function rules({ firstTime, oldItems, newItems }) {

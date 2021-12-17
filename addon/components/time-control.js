@@ -1,7 +1,7 @@
 import Component from '@ember/component';
 import layout from '../templates/components/time-control';
 import TimeControl from '../reexported/time-control';
-import { computed, action } from '@ember/object';
+import { computed } from '@ember/object';
 import { htmlSafe } from '@ember/template';
 import { task } from 'ember-animated';
 import { inject } from '@ember/service';
@@ -60,13 +60,15 @@ export default Component.extend({
     }
   },
 
-  updateLogSpeed: action(function (event) {
-    this._setSpeed(fromLogSpeed(event.target.valueAsNumber));
-  }),
+  actions: {
+    updateLogSpeed (event) {
+      this._setSpeed(fromLogSpeed(event.target.valueAsNumber));
+    },
 
-  tickMarkChosen: action(function (tickMark) {
-    this._setSpeed(tickMark.value);
-  }),
+    tickMarkChosen (tickMark) {
+      this._setSpeed(tickMark.value);
+    },
+  },
 
   _setSpeed(speed) {
     this._speedSetter.perform(speed);
@@ -85,7 +87,8 @@ export default Component.extend({
       if (this.time) {
         this.time.runAtSpeed(1);
         this.set('speedPercent', speed);
-        yield this.motionService.waitUntilIdle.perform();
+        // eslint-disable-next-line ember/no-get
+        yield this.get('motionService.waitUntilIdle').perform();
         this.time.finished();
         this.time = null;
       }

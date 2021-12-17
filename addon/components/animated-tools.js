@@ -1,6 +1,6 @@
 import Component from '@ember/component';
 import layout from '../templates/components/animated-tools';
-import { computed, action } from '@ember/object';
+import { computed } from '@ember/object';
 
 export default Component.extend({
   layout,
@@ -64,12 +64,14 @@ export default Component.extend({
       (this.hideUntilKeys && !localStorage.getItem('animated-tools-activated'));
   }),
 
-  toggle: action(function () {
-    if (this.isOpen) {
-      localStorage.removeItem('animated-tools-open');
-    } else {
-      localStorage.setItem('animated-tools-open', true);
+  actions: {
+    toggle: function () {
+      if (this.isOpen) {
+        localStorage.removeItem('animated-tools-open');
+      } else {
+        localStorage.setItem('animated-tools-open', true);
+      }
+      this.notifyPropertyChange('isOpen');
     }
-    this.notifyPropertyChange('isOpen');
-  })
+  }
 });

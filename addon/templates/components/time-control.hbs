@@ -4,7 +4,7 @@
     <div class="eat-time-control--tick-marks">
       {{#each this.tickMarks as |tickMark|}}
         {{! template-lint-disable no-inline-styles }}
-        <div style={{tickMark.position}} role="button" {{on "click" (fn this.tickMarkChosen tickMark)}}>
+        <div style={{tickMark.position}} role="button" {{action "tickMarkChosen" tickMark}}>
           <span>{{tickMark.text}}</span>
         </div>
       {{/each}}
@@ -17,7 +17,7 @@
       max="200"
       step="1"
       aria-label="Speed slider"
-      {{on "input" this.updateLogSpeed}}
+      oninput={{action "updateLogSpeed"}}
     >
   </div>
 </div>
