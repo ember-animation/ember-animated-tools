@@ -3,6 +3,6 @@
 module.exports = {
   extends: 'recommended',
   rules: {
-    'no-action': 'off'
-  }
+    'no-action': 'off',
+  },
 };

@@ -23,8 +23,8 @@ module.exports = {
   treeForAddon(tree) {
     let timeControl = new Funnel(path.dirname(this._locateTimeControl()), {
       destDir: 'reexported',
-      include: ['time-control.js']
+      include: ['time-control.js'],
     });
     return this._super.call(this, mergeTrees([tree, timeControl]));
-  }
+  },
 };

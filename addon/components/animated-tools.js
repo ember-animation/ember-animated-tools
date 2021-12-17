@@ -6,11 +6,11 @@ export default Component.extend({
   layout,
   tagName: '',
 
-  tests: computed('hideUntilKeys', function() {
+  tests: computed('hideUntilKeys', function () {
     if (!this.hideUntilKeys) {
       return null;
     }
-    return this.hideUntilKeys.split('-').map(part => {
+    return this.hideUntilKeys.split('-').map((part) => {
       if (part === 'Ctrl') {
         return (event) => event.ctrlKey;
       }
@@ -38,7 +38,7 @@ export default Component.extend({
   },
 
   _keyListener(event) {
-    if (this.tests.every(test => test(event))) {
+    if (this.tests.every((test) => test(event))) {
       if (localStorage.getItem('animated-tools-activated')) {
         localStorage.removeItem('animated-tools-activated');
       } else {
@@ -50,18 +50,21 @@ export default Component.extend({
     }
   },
 
-  isOpen: computed(function() {
-    return typeof FastBoot === 'undefined' &&
-      !!localStorage.getItem('animated-tools-open');
+  isOpen: computed(function () {
+    return (
+      typeof FastBoot === 'undefined' &&
+      !!localStorage.getItem('animated-tools-open')
+    );
   }),
 
-  isHidden: computed('hideUntilKeys', function() {
+  isHidden: computed('hideUntilKeys', function () {
     // always hidden in fastboot
-    return typeof FastBoot !== 'undefined' ||
-
+    return (
+      typeof FastBoot !== 'undefined' ||
       // or hidden if we we're using hideUntilKeys and the keys haven't been
       // pressed yet
-      (this.hideUntilKeys && !localStorage.getItem('animated-tools-activated'));
+      (this.hideUntilKeys && !localStorage.getItem('animated-tools-activated'))
+    );
   }),
 
   actions: {
@@ -72,6 +75,6 @@ export default Component.extend({
         localStorage.setItem('animated-tools-open', true);
       }
       this.notifyPropertyChange('isOpen');
-    }
-  }
+    },
+  },
 });
