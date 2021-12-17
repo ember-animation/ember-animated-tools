@@ -29,7 +29,7 @@ module('Integration | Components | AnimatedTools', function (hooks) {
 
     await triggerEvent(document, 'keydown', {
       ctrlKey: true,
-      code: 'KeyA'
+      code: 'KeyA',
     });
     assert.dom('.animated-tools').exists();
   });

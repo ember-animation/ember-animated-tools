@@ -3,11 +3,11 @@
 const getChannelURL = require('ember-source-channel-url');
 // const { embroiderSafe, embroiderOptimized } = require('@embroider/test-setup');
 
-module.exports = function() {
+module.exports = function () {
   return Promise.all([
     getChannelURL('release'),
     getChannelURL('beta'),
-    getChannelURL('canary')
+    getChannelURL('canary'),
   ]).then((urls) => {
     return {
       useYarn: true,
@@ -16,65 +16,65 @@ module.exports = function() {
           name: 'ember-lts-3.10',
           npm: {
             devDependencies: {
-              'ember-source': '~3.10.2'
-            }
-          }
+              'ember-source': '~3.10.2',
+            },
+          },
         },
         {
           name: 'ember-lts-3.12',
           npm: {
             devDependencies: {
-              'ember-source': '~3.12.4'
-            }
-          }
+              'ember-source': '~3.12.4',
+            },
+          },
         },
         {
           name: 'ember-lts-3.16',
           npm: {
             devDependencies: {
-              'ember-source': '~3.16.10'
-            }
-          }
+              'ember-source': '~3.16.10',
+            },
+          },
         },
         {
           name: 'ember-lts-3.20',
           npm: {
             devDependencies: {
-              'ember-source': '~3.20.7'
-            }
-          }
+              'ember-source': '~3.20.7',
+            },
+          },
         },
         {
           name: 'ember-lts-3.24',
           npm: {
             devDependencies: {
-              'ember-source': '~3.24.6'
-            }
-          }
+              'ember-source': '~3.24.6',
+            },
+          },
         },
         {
           name: 'ember-release',
           npm: {
             devDependencies: {
-              'ember-source': urls[0]
-            }
-          }
+              'ember-source': urls[0],
+            },
+          },
         },
         {
           name: 'ember-beta',
           npm: {
             devDependencies: {
-              'ember-source': urls[1]
-            }
-          }
+              'ember-source': urls[1],
+            },
+          },
         },
         {
           name: 'ember-canary',
           npm: {
             devDependencies: {
-              'ember-source': urls[2]
-            }
-          }
+              'ember-source': urls[2],
+            },
+          },
         },
         {
           name: 'ember-default-with-jquery',
@@ -109,7 +109,7 @@ module.exports = function() {
         },
         // embroiderSafe(),
         // embroiderOptimized(),
-      ]
+      ],
     };
   });
 };

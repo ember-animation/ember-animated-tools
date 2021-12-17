@@ -7,12 +7,14 @@ export default Controller.extend({
   actions: {
     toggle() {
       this.set('showLeft', !this.showLeft);
-    }
-  }
+    },
+  },
 });
 
 function rules({ firstTime, oldItems, newItems }) {
-  if (firstTime) { return; }
+  if (firstTime) {
+    return;
+  }
   if (oldItems[0] < newItems[0]) {
     return toRight;
   } else {

@@ -13,11 +13,11 @@ function toLogSpeed(speedPercent) {
     // counts as paused for us.
     percent = 1;
   }
-  return 200 * Math.log(percent) / Math.log(200);
+  return (200 * Math.log(percent)) / Math.log(200);
 }
 
 function fromLogSpeed(logSpeed) {
-  let percent = Math.exp(Math.log(200) * logSpeed / 200);
+  let percent = Math.exp((Math.log(200) * logSpeed) / 200);
   if (percent <= 1) {
     percent = 0;
   }
@@ -30,11 +30,11 @@ export default Component.extend({
   speedPercent: 100,
   motionService: inject('-ea-motion'),
 
-  logSpeed: computed('speedPercent', function() {
+  logSpeed: computed('speedPercent', function () {
     return toLogSpeed(this.speedPercent);
   }),
 
-  tickMarks: computed(function() {
+  tickMarks: computed(function () {
     return [
       { value: 0, text: 'Paused' },
       { value: 5, text: '5%' },
@@ -42,8 +42,8 @@ export default Component.extend({
       { value: 25, text: '25%' },
       { value: 50, text: '50%' },
       { value: 100, text: '100%' },
-    ].map(entry => {
-      entry.position = htmlSafe(`left: ${toLogSpeed(entry.value)/ 2}%`);
+    ].map((entry) => {
+      entry.position = htmlSafe(`left: ${toLogSpeed(entry.value) / 2}%`);
       return entry;
     });
   }),
@@ -61,11 +61,11 @@ export default Component.extend({
   },
 
   actions: {
-    updateLogSpeed (event) {
+    updateLogSpeed(event) {
       this._setSpeed(fromLogSpeed(event.target.valueAsNumber));
     },
 
-    tickMarkChosen (tickMark) {
+    tickMarkChosen(tickMark) {
       this._setSpeed(tickMark.value);
     },
   },
@@ -74,7 +74,7 @@ export default Component.extend({
     this._speedSetter.perform(speed);
   },
 
-  _speedSetter: task(function * (speed) {
+  _speedSetter: task(function* (speed) {
     if (speed === 100) {
       // at normal speed, we want to disable our time control
       // entirely. This means we won't intefere with things like
@@ -103,5 +103,5 @@ export default Component.extend({
       }
       this.set('speedPercent', speed);
     }
-  }).restartable()
+  }).restartable(),
 });
