@@ -3,6 +3,14 @@
 A widget useful for slowing down and debugging Ember Animated animations.
 
 
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v3.4 or above
+* Ember CLI v3.4 or above
+* Node.js v12 or above
+
+
 Installation
 ------------------------------------------------------------------------------
 
@@ -26,13 +34,6 @@ Or add it, but keep it hidden until a hotkey reveals it:
 ```
 
 Or if you want to use the lower-level pieces, you can directly place the `<MotionIndicator />` or `<TimeControl />` components wherever you like.
-
-
-Compatibility
-------------------------------------------------------------------------------
-
-* Ember.js v3.4 or above
-* Ember CLI v2.13 or above
 
 
 Contributing
