@@ -16,8 +16,10 @@ module.exports = {
     if (this.project.pkg.name === 'ember-animated') {
       target = target.replace('ember-animated', '.');
     }
-    let file = resolve.sync(target, { basedir: this.project.root });
-    return file;
+    if (this.project.pkg.name === 'ember-animated-docs') {
+      target = target.replace('ember-animated', '..');
+    }
+    return resolve.sync(target, { basedir: this.project.root });
   },
 
   treeForAddon(tree) {
