@@ -10,6 +10,8 @@ Compatibility
 * Ember CLI v3.4 or above
 * Node.js v12 or above
 
+Note: This addon supports Ember.js 3.4 or above however you would need
+`ember-animated` v0.9.0 to support Ember.js v3.9 or below.
 
 Installation
 ------------------------------------------------------------------------------
