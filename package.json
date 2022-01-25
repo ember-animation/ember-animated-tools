@@ -1,6 +1,6 @@
 {
   "name": "ember-animated-tools",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "description": "Components that help you develop and debug ember-animated transitions",
   "keywords": [
     "ember-addon"
