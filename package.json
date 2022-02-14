@@ -40,7 +40,7 @@
     "@glimmer/tracking": "^1.0.4",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
-    "ember-animated": "github:ember-animation/ember-animated#6e53ca8c3f0d16af9cd400b3a7582a7e5558bd20",
+    "ember-animated": "github:ember-animation/ember-animated#e9d9597e0e7234cd8ec6061c13d4ff4ee40830c4",
     "ember-auto-import": "^2.2.4",
     "ember-cli": "~4.0.0",
     "ember-cli-dependency-checker": "^3.2.0",
