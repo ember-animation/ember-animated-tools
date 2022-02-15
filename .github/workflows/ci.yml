@@ -65,7 +65,6 @@ jobs:
           - ember-beta
           - ember-canary
           - ember-classic
-          - ember-default-with-jquery
           - embroider-safe
           - embroider-optimized
 
