@@ -1,9 +1,9 @@
 import { helper } from '@ember/component/helper';
 
-export function rounded([value]) {
+export function eatRounded([value]) {
   if (value != null) {
     return Math.round(value);
   }
 }
 
-export default helper(rounded);
+export default helper(eatRounded);

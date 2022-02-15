@@ -1,0 +1,25 @@
+<div class="eat-time-control">
+  <div>
+    <label>Speed {{-eat-rounded this.speedPercent}}%</label>
+    <div>
+      <div class="eat-time-control--tick-marks">
+        {{#each this.tickMarks as |tickMark|}}
+          {{! template-lint-disable no-inline-styles }}
+          <div style={{tickMark.position}} role="button" {{on "click" (fn this.tickMarkChosen tickMark)}}>
+            <span>{{tickMark.text}}</span>
+          </div>
+        {{/each}}
+      </div>
+      <input
+        class="eat-time-control--slider"
+        type="range"
+        value={{this.logSpeed}}
+        min="0"
+        max="200"
+        step="1"
+        aria-label="Speed slider"
+        oninput={{this.updateLogSpeed}}
+      >
+    </div>
+  </div>
+</div>
