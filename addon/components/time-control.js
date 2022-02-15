@@ -83,8 +83,7 @@ export default class TimeControlComponent extends Component {
       if (this.time) {
         this.time.runAtSpeed(1);
         this.speedPercent = speed;
-        // eslint-disable-next-line ember/no-get
-        yield this.get('motionService.waitUntilIdle').perform();
+        yield this.motionService.waitUntilIdle?.perform();
         this.time.finished();
         this.time = null;
       }

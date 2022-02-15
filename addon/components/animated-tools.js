@@ -8,17 +8,16 @@ export default class AnimatedTools extends Component {
   // always hidden in fastboot
   @tracked isHidden = true;
 
-  constructor () {
+  constructor() {
     super(...arguments);
 
     if (typeof FastBoot === 'undefined') {
       this.isOpen = !!localStorage.getItem('animated-tools-open');
 
       // hidden if we're using hideUntilKeys and the keys haven't been pressed yet.
-      this.isHidden = (
+      this.isHidden =
         this.args.hideUntilKeys &&
-        !localStorage.getItem('animated-tools-activated')
-      );
+        !localStorage.getItem('animated-tools-activated');
 
       if (this.args.hideUntilKeys) {
         this._keyListener = this._keyListener.bind(this);
@@ -35,7 +34,7 @@ export default class AnimatedTools extends Component {
     }
   }
 
-  get tests () {
+  get tests() {
     if (!this.args.hideUntilKeys) {
       return null;
     }
@@ -64,7 +63,7 @@ export default class AnimatedTools extends Component {
     }
   }
 
-  @action toggle () {
+  @action toggle() {
     if (this.isOpen) {
       this.hide();
     } else {
@@ -72,22 +71,22 @@ export default class AnimatedTools extends Component {
     }
   }
 
-  open () {
+  open() {
     localStorage.setItem('animated-tools-open', true);
     this.isOpen = true;
   }
 
-  hide () {
+  hide() {
     localStorage.removeItem('animated-tools-open');
     this.isOpen = false;
   }
 
-  activate () {
+  activate() {
     localStorage.setItem('animated-tools-activated', true);
     this.isHidden = false;
   }
 
-  deactivate () {
+  deactivate() {
     localStorage.removeItem('animated-tools-activated');
     this.isHidden = true;
   }
