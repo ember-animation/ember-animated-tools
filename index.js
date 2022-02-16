@@ -17,7 +17,7 @@ module.exports = {
       target = target.replace('ember-animated', '.');
     }
     if (this.project.pkg.name === 'ember-animated-docs') {
-      target = target.replace('ember-animated', '..');
+      target = target.replace('ember-animated', '../addon');
     }
     return resolve.sync(target, { basedir: this.project.root });
   },
