@@ -1,15 +1,16 @@
 import Controller from '@ember/controller';
+import { tracked } from '@glimmer/tracking';
+import { action } from '@ember/object';
 import { toLeft, toRight } from 'ember-animated/transitions/move-over';
 
-export default Controller.extend({
-  showLeft: true,
-  rules,
-  actions: {
-    toggle() {
-      this.set('showLeft', !this.showLeft);
-    },
-  },
-});
+export default class extends Controller {
+  @tracked showLeft = true;
+  rules = rules;
+
+  @action toggle() {
+    this.showLeft = !this.showLeft;
+  }
+}
 
 function rules({ firstTime, oldItems, newItems }) {
   if (firstTime) {

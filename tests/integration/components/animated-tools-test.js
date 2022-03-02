@@ -1,6 +1,6 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
-import { render, triggerEvent } from '@ember/test-helpers';
+import { render, triggerEvent, click } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
 module('Integration | Components | AnimatedTools', function (hooks) {
@@ -32,5 +32,23 @@ module('Integration | Components | AnimatedTools', function (hooks) {
       code: 'KeyA',
     });
     assert.dom('.animated-tools').exists();
+  });
+
+  test('it renders closed', async function (assert) {
+    await render(hbs`<AnimatedTools />`);
+
+    assert.dom('.animated-tools').exists();
+    assert.dom('.animated-tools').doesNotHaveClass('is-open');
+  });
+
+  test('it renders open once launcher pressed', async function (assert) {
+    await render(hbs`<AnimatedTools />`);
+
+    assert.dom('.animated-tools').exists();
+    assert.dom('.animated-tools').doesNotHaveClass('is-open');
+
+    await click('.animated-tools-launcher');
+
+    assert.dom('.animated-tools').hasClass('is-open');
   });
 });
