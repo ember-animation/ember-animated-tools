@@ -17,8 +17,8 @@ importers:
       '@babel/core': ^7.17.5
       '@babel/plugin-proposal-class-properties': ^7.16.7
       '@babel/plugin-proposal-decorators': ^7.17.2
-      '@embroider/addon-dev': ^1.4.0
-      '@embroider/addon-shim': ^1.4.0
+      '@embroider/addon-dev': ^1.5.0
+      '@embroider/addon-shim': ^1.5.0
       '@rollup/plugin-babel': ^5.3.1
       ember-animated: file:../ember-animated-0.12.0.tgz
       ember-template-lint: ^4.0.0
@@ -32,13 +32,13 @@ importers:
       prettier: ^2.5.1
       rollup: ^2.70.0
     dependencies:
-      '@embroider/addon-shim': 1.4.0
+      '@embroider/addon-shim': 1.5.0
       ember-animated: file:ember-animated-0.12.0.tgz
     devDependencies:
       '@babel/core': 7.17.5
       '@babel/plugin-proposal-class-properties': 7.16.7_@babel+core@7.17.5
       '@babel/plugin-proposal-decorators': 7.17.2_@babel+core@7.17.5
-      '@embroider/addon-dev': 1.4.0_rollup@2.70.0
+      '@embroider/addon-dev': 1.5.0_rollup@2.70.0
       '@rollup/plugin-babel': 5.3.1_@babel+core@7.17.5+rollup@2.70.0
       ember-template-lint: 4.2.0
       eslint: 7.32.0
@@ -55,7 +55,7 @@ importers:
     specifiers:
       '@ember/optional-features': ^2.0.0
       '@ember/test-helpers': ^2.6.0
-      '@embroider/test-setup': ^1.4.0
+      '@embroider/test-setup': ^1.5.0
       '@glimmer/component': ^1.0.4
       '@glimmer/tracking': ^1.0.4
       babel-eslint: ^10.1.0
@@ -94,7 +94,7 @@ importers:
     devDependencies:
       '@ember/optional-features': 2.0.0
       '@ember/test-helpers': 2.6.0
-      '@embroider/test-setup': 1.4.0
+      '@embroider/test-setup': 1.5.0
       '@glimmer/component': 1.0.4
       '@glimmer/tracking': 1.0.4
       babel-eslint: 10.1.0_eslint@7.32.0
@@ -1366,12 +1366,12 @@ packages:
       - supports-color
     dev: true
 
-  /@embroider/addon-dev/1.4.0_rollup@2.70.0:
-    resolution: {integrity: sha512-PpVME45RV+iy3oZ9hi0ivQQzSaG9F6VwekittHsnSAY5bFVOHx0VRGikwOK/2CrQidKESXkG3p1RmVniUEV+vw==}
+  /@embroider/addon-dev/1.5.0_rollup@2.70.0:
+    resolution: {integrity: sha512-F8zkTA7LgOTN8uK8Lzy8GMnbfk31NZ6NDLRSELAyLQpECmTqXauy0HDAcmcIKVcwBxNVDTbLENCro12cgyTnMA==}
     engines: {node: 12.* || 14.* || >= 16}
     hasBin: true
     dependencies:
-      '@embroider/shared-internals': 1.4.0
+      '@embroider/shared-internals': 1.5.0
       '@rollup/pluginutils': 4.2.0
       fs-extra: 10.0.1
       minimatch: 3.1.2
@@ -1383,11 +1383,11 @@ packages:
       - rollup
     dev: true
 
-  /@embroider/addon-shim/1.4.0:
-    resolution: {integrity: sha512-ulPSV/QFZezBYs0p5g2mUdzcximPsIhjf47rVHyLX2rLzyGf3+79ZNk/5DwA6LQg5cw1lpt02zD26Lk3BBxPxg==}
+  /@embroider/addon-shim/1.5.0:
+    resolution: {integrity: sha512-5zgwA/wTYjgn2Oo6hKRQhF/5Gnwb+hGhj/WXhZQa5yA7fRRdBV1tVMS7b7SLawZcmOhuWkyPwFdgsYtGBvDB0w==}
     engines: {node: 12.* || 14.* || >= 16}
     dependencies:
-      '@embroider/shared-internals': 1.4.0
+      '@embroider/shared-internals': 1.5.0
       semver: 7.3.5
 
   /@embroider/macros/1.4.0:
@@ -1417,8 +1417,20 @@ packages:
       semver: 7.3.5
       typescript-memoize: 1.1.0
 
-  /@embroider/test-setup/1.4.0:
-    resolution: {integrity: sha512-bhXR0G5wxpH1wIgxGaHuYCItD+oc0FpWXeUOgfN4PmT1uQCW/RSUYoGZ8DqB45Yzao0AKXgIhjuViEhqZY3ITA==}
+  /@embroider/shared-internals/1.5.0:
+    resolution: {integrity: sha512-kdR7Fh2YdzsNofJO+DJxLfrlMbW4/NNf78aMXgE21z/tg9GO5W2mKlI1DzsO2JlO5yfZdiYfqb9C9vSLJEx14A==}
+    engines: {node: 12.* || 14.* || >= 16}
+    dependencies:
+      babel-import-util: 1.1.0
+      ember-rfc176-data: 0.3.17
+      fs-extra: 9.1.0
+      lodash: 4.17.21
+      resolve-package-path: 4.0.3
+      semver: 7.3.5
+      typescript-memoize: 1.1.0
+
+  /@embroider/test-setup/1.5.0:
+    resolution: {integrity: sha512-4C0dgVswxfA/lBCD8FUWADQhjeO8AJ2KmRkvItOPSwPlAA1QI7gOD28DuiAnCAK18muIFq7P++gvl1qBNid6lg==}
     engines: {node: 12.* || 14.* || >= 16}
     dependencies:
       lodash: 4.17.21
@@ -12080,7 +12092,7 @@ packages:
     dev: true
 
   file:ember-animated-0.12.0.tgz:
-    resolution: {integrity: sha512-dTiY9CSoST8lUS771xEqH4ao5so2T4VLEEIYPXMjo5GfSUaJbvnPu/dlfAyJaCKxy2AJ5Q6MaqzMd7slaPl1Vg==, tarball: file:ember-animated-0.12.0.tgz}
+    resolution: {integrity: sha512-ESpQZuL1tfYDHPXv+XmHbUGxMOmwxrpWrMXhNnbXlxVEnJmONAJPUEQD76OMedmtQXHPEJ7yS7XSduuXDY5pPQ==, tarball: file:ember-animated-0.12.0.tgz}
     name: ember-animated
     version: 0.12.0
     engines: {node: 12.* || 14.* || >= 16}
@@ -12090,7 +12102,7 @@ packages:
       '@ember/test-helpers':
         optional: true
     dependencies:
-      '@embroider/addon-shim': 1.4.0
+      '@embroider/addon-shim': 1.5.0
       assert-never: 1.2.1
       ember-element-helper: 0.6.0
     transitivePeerDependencies:
@@ -12099,7 +12111,7 @@ packages:
     dev: false
 
   file:ember-animated-0.12.0.tgz_a685827f996f41ed5f67becff747a217:
-    resolution: {integrity: sha512-dTiY9CSoST8lUS771xEqH4ao5so2T4VLEEIYPXMjo5GfSUaJbvnPu/dlfAyJaCKxy2AJ5Q6MaqzMd7slaPl1Vg==, tarball: file:ember-animated-0.12.0.tgz}
+    resolution: {integrity: sha512-ESpQZuL1tfYDHPXv+XmHbUGxMOmwxrpWrMXhNnbXlxVEnJmONAJPUEQD76OMedmtQXHPEJ7yS7XSduuXDY5pPQ==, tarball: file:ember-animated-0.12.0.tgz}
     id: file:ember-animated-0.12.0.tgz
     name: ember-animated
     version: 0.12.0
@@ -12111,7 +12123,7 @@ packages:
         optional: true
     dependencies:
       '@ember/test-helpers': 2.6.0
-      '@embroider/addon-shim': 1.4.0
+      '@embroider/addon-shim': 1.5.0
       assert-never: 1.2.1
       ember-element-helper: 0.6.0_ember-source@4.1.0
     transitivePeerDependencies:
