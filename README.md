@@ -6,12 +6,9 @@ A widget useful for slowing down and debugging Ember Animated animations.
 Compatibility
 ------------------------------------------------------------------------------
 
-* Ember.js v3.4 or above
-* Ember CLI v3.4 or above
+* Ember.js v3.16 or above
+* Ember CLI v3.16 or above
 * Node.js v12 or above
-
-Note: This addon supports Ember.js 3.4 or above however you would need
-`ember-animated` v0.9.0 to support Ember.js v3.9 or below.
 
 Installation
 ------------------------------------------------------------------------------
