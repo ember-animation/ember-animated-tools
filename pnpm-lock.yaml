@@ -56,8 +56,6 @@ importers:
   test-app:
     specifiers:
       '@babel/eslint-parser': ^7.17.0
-      '@babel/plugin-proposal-class-properties': ^7.16.7
-      '@babel/plugin-proposal-decorators': ^7.17.2
       '@ember/optional-features': ^2.0.0
       '@ember/test-helpers': ^2.6.0
       '@embroider/test-setup': ^1.5.0
@@ -97,8 +95,6 @@ importers:
       webpack: ^5.70.0
     devDependencies:
       '@babel/eslint-parser': 7.17.0_eslint@8.11.0
-      '@babel/plugin-proposal-class-properties': 7.16.7
-      '@babel/plugin-proposal-decorators': 7.17.2
       '@ember/optional-features': 2.0.0
       '@ember/test-helpers': 2.6.0
       '@embroider/test-setup': 1.5.0
@@ -640,21 +636,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@babel/plugin-proposal-decorators/7.17.2:
-    resolution: {integrity: sha512-WH8Z95CwTq/W8rFbMqb9p3hicpt4RX4f0K659ax2VHxgOyT6qQmUaEVEjIh4WR9Eh9NymkVn5vwsrE68fAQNUw==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/helper-create-class-features-plugin': 7.17.6
-      '@babel/helper-plugin-utils': 7.16.7
-      '@babel/helper-replace-supers': 7.16.7
-      '@babel/plugin-syntax-decorators': 7.17.0
-      charcodes: 0.2.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /@babel/plugin-proposal-decorators/7.17.2_@babel+core@7.17.5:
     resolution: {integrity: sha512-WH8Z95CwTq/W8rFbMqb9p3hicpt4RX4f0K659ax2VHxgOyT6qQmUaEVEjIh4WR9Eh9NymkVn5vwsrE68fAQNUw==}
     engines: {node: '>=6.9.0'}
@@ -840,15 +821,6 @@ packages:
     dependencies:
       '@babel/core': 7.17.5
       '@babel/helper-plugin-utils': 7.16.7
-
-  /@babel/plugin-syntax-decorators/7.17.0:
-    resolution: {integrity: sha512-qWe85yCXsvDEluNP0OyeQjH63DlhAR3W7K9BxxU1MvbDb48tgBG+Ao6IJJ6smPDrrVzSQZrbF6donpkFBMcs3A==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/helper-plugin-utils': 7.16.7
-    dev: true
 
   /@babel/plugin-syntax-decorators/7.17.0_@babel+core@7.17.5:
     resolution: {integrity: sha512-qWe85yCXsvDEluNP0OyeQjH63DlhAR3W7K9BxxU1MvbDb48tgBG+Ao6IJJ6smPDrrVzSQZrbF6donpkFBMcs3A==}
