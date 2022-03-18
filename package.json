@@ -36,7 +36,15 @@
       "release-it-yarn-workspaces": {
         "workspaces": [
           "addon"
-        ]
+        ],
+        "additionalManifests": {
+          "dependencyUpdates": [
+            "test-app/package.json"
+          ],
+          "versionUpdates": [
+            "test-app/package.json"
+          ]
+        }
       }
     },
     "git": {
