@@ -1,30 +1,14 @@
-# compiled output
-/dist/
-/tmp/
-
-# misc
-/.bowerrc
-/.editorconfig
-/.ember-cli
+.gitkeep
 /.env*
 /.eslintcache
 /.eslintignore
 /.eslintrc.js
-/.git/
 /.github/
 /.gitignore
+/.lint-todo
 /.pnpm-debug.log
 /.prettierignore
 /.prettierrc.js
 /.template-lintrc.js
-/.travis.yml
-/.watchmanconfig
-/bower.json
-/config/ember-try.js
-/CONTRIBUTING.md
-/ember-cli-build.js
-/testem.js
-/tests/
+/rollup.config.js
 /yarn-error.log
-/yarn.lock
-.gitkeep
