@@ -1,8 +1,8 @@
+/* stylelint-disable declaration-block-no-redundant-longhand-properties */
 .demo-app {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-
   grid-template-areas:
     "header header"
     "left   right";
