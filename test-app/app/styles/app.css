@@ -1,27 +1,27 @@
+/* stylelint-disable declaration-block-no-redundant-longhand-properties */
 .demo-app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-
-    grid-template-areas:
-      "header header"
-      "left   right"
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header"
+    "left   right";
 }
 
 header {
-    grid-area: header;
+  grid-area: header;
 }
 
 .demo-item {
-    min-height: 4em;
-    text-align: center;
-    line-height: 4em;
+  min-height: 4em;
+  text-align: center;
+  line-height: 4em;
 }
 
 .left {
-    grid-area: left;
+  grid-area: left;
 }
 
 .right {
-    grid-area: right;
+  grid-area: right;
 }
