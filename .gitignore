@@ -1,7 +1,16 @@
-# you definitely want this:
-node_modules
+# See https://help.github.com/ignore-files/ for more about ignoring files.
 
-# and you can put in anything else that tends to accumulate in your environment:
+# dependencies
+node_modules/
+
+# *.md copies from release
+/addon/README.md
+/addon/LICENSE.md
+
+# misc
+.env*
+.eslintcache
+.pnp*
 .pnpm-debug.log
+coverage/
 .DS_Store
-yarn-error.log
