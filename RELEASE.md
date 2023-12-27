@@ -30,9 +30,9 @@ Once the prep work is completed, the actual release is straight forward:
 
 * First, ensure that you have installed your projects dependencies:
 
-```sh
-pnpm install
-```
+  ```sh
+  pnpm install
+  ```
 
 * Second, ensure that you have obtained a
   [GitHub personal access token][generate-token] with the `repo` scope (no
@@ -45,16 +45,21 @@ pnpm install
   export GITHUB_AUTH=abc123def456
   ```
 
-[generate-token]: https://github.com/settings/tokens/new?scopes=repo&description=GITHUB_AUTH+env+variable
+  [generate-token]: https://github.com/settings/tokens/new?scopes=repo&description=GITHUB_AUTH+env+variable
 
 * And last (but not least 😁) do your release.
 
-```sh
-pnpm run release-it
-```
+  ```sh
+  pnpm release
+  ```
 
 [release-it](https://github.com/release-it/release-it/) manages the actual
 release process. It will prompt you to choose the version number after which
 you will have the chance to hand tweak the changelog to be used (for the
 `CHANGELOG.md` and GitHub release), then `release-it` continues on to tagging,
 pushing the tag and commits, etc.
+
+## Unstable Tag
+
+For every push to the master branch, [`push-dist`](./.github/workflows/push-dist.yml)
+places the compiled assets on a "dist" branch.

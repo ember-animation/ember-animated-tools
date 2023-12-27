@@ -1,18 +1,13 @@
 # unconventional js
 /blueprints/*/files/
-/vendor/
 
 # compiled output
 /dist/
-/tmp/
-
-# dependencies
-/node_modules/
+/declarations/
 
 # misc
 /coverage/
 !.*
-.eslintcache
 .lint-todo/
 
 # Prettier does not support @task(function () {}).restartable() modifier
