@@ -40,8 +40,8 @@ importers:
         specifier: ^7.23.3
         version: 7.23.3(@babel/core@7.23.6)(eslint@8.56.0)
       '@babel/runtime':
-        specifier: ^7.17.0
-        version: 7.17.2
+        specifier: ^7.23.6
+        version: 7.23.6
       '@embroider/addon-dev':
         specifier: ^4.1.0
         version: 4.1.3(rollup@4.9.1)
@@ -2210,13 +2210,6 @@ packages:
     resolution: {integrity: sha512-BogPQ7ciE6SYAUPtlm9tWbgI9+2AgqSam6QivMgXgAT+fKbgppaj4ZX15MHeLC1PVF5sNk70huBu20XxWOs8Cg==}
     dependencies:
       regenerator-runtime: 0.13.9
-
-  /@babel/runtime@7.17.2:
-    resolution: {integrity: sha512-hzeyJyMA1YGdJTuWU0e/j4wKXrU4OMFvY2MSlaI9B7VQb0r5cxTE3EAIS2Q7Tn2RIcDkRvTA/v2JsAEhxe99uw==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      regenerator-runtime: 0.13.9
-    dev: true
 
   /@babel/runtime@7.23.6:
     resolution: {integrity: sha512-zHd0eUrf5GZoOWVCXp6koAKQTfZV07eit6bGPmJgnZdnSAvvZee6zniW2XMF7Cmc4ISOOnPy3QaSiIJGJkVEDQ==}
