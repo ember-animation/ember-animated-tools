@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@embroider/addon-shim": "^1.8.7",
-    "ember-animated": "^1.0.0 || ^2.0.0",
+    "ember-animated": "^2.0.0",
     "decorator-transforms": "^1.0.3"
   },
   "devDependencies": {
