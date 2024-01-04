@@ -27,8 +27,8 @@ importers:
         specifier: ^1.8.7
         version: 1.8.7
       decorator-transforms:
-        specifier: ^1.0.2
-        version: 1.0.2(@babel/core@7.23.7)
+        specifier: ^1.0.3
+        version: 1.0.3(@babel/core@7.23.7)
       ember-animated:
         specifier: ^1.0.0 || ^2.0.0
         version: 1.0.0(@ember/test-helpers@3.2.1)(ember-source@5.5.0)
@@ -5787,8 +5787,8 @@ packages:
       mimic-response: 3.1.0
     dev: true
 
-  /decorator-transforms@1.0.2(@babel/core@7.23.7):
-    resolution: {integrity: sha512-Pj2U7Pt9SZYNq+FLomhHhEqkVUEIuGTAY18yzeq6jn2O4ryqAp0rlHQvAwBuoAUlsxSr4tZJAaWYqgbMORahAQ==}
+  /decorator-transforms@1.0.3(@babel/core@7.23.7):
+    resolution: {integrity: sha512-kY+IuCYwp1WvWWDrT+NmqckV4ZZ4wBDIvbbvhQBNUZYLxztLpN/P+hBhmVXN/1G95U61yYWewJEdJ+o4Sm8Tng==}
     dependencies:
       '@babel/plugin-syntax-decorators': 7.23.3(@babel/core@7.23.7)
       babel-import-util: 2.0.1
