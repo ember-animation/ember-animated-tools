@@ -43,4 +43,4 @@ jobs:
       - name: npm publish
         run: npm publish --tag=latest --verbose --workspace=addon
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
