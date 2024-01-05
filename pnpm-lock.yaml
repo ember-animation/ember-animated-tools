@@ -30,7 +30,7 @@ importers:
         specifier: ^1.0.3
         version: 1.0.3(@babel/core@7.23.7)
       ember-animated:
-        specifier: ^2.0.0
+        specifier: ^1.0.0 || ^2.0.0
         version: 2.0.0(@babel/core@7.23.7)(@ember/test-helpers@3.2.1)(ember-source@5.5.0)
     devDependencies:
       '@babel/core':
