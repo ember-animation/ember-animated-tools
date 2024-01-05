@@ -1,4 +1,22 @@
 
+
+## v2.0.0 (2024-01-05)
+
+#### :boom: Breaking Change
+* [#152](https://github.com/ember-animation/ember-animated-tools/pull/152) Drop support for Ember.js 4.4 and below ([@SergeAstapov](https://github.com/SergeAstapov))
+
+#### :rocket: Enhancement
+* [#151](https://github.com/ember-animation/ember-animated-tools/pull/151) Sync with embroider-addon blueprint and use decorator-transforms ([@SergeAstapov](https://github.com/SergeAstapov))
+
+#### :memo: Documentation
+* [#102](https://github.com/ember-animation/ember-animated-tools/pull/102)  move `.md` files to published package ([@SergeAstapov](https://github.com/SergeAstapov))
+
+#### :house: Internal
+* [#153](https://github.com/ember-animation/ember-animated-tools/pull/153) run `npx ember-cli-update --to=5.5.0` to align with blueprint ([@SergeAstapov](https://github.com/SergeAstapov))
+
+#### Committers: 1
+- Sergey Astapov ([@SergeAstapov](https://github.com/SergeAstapov))
+
 ## v1.0.0 (2022-03-18)
 
 #### :boom: Breaking Change
