@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@release-it-plugins/lerna-changelog':
-        specifier: ^6.0.0
-        version: 6.0.0(release-it@16.3.0)
+        specifier: ^6.1.0
+        version: 6.1.0(release-it@16.3.0)
       '@release-it-plugins/workspaces':
         specifier: ^4.0.0
         version: 4.0.0(release-it@16.3.0)
@@ -2953,11 +2953,11 @@ packages:
       config-chain: 1.1.13
     dev: true
 
-  /@release-it-plugins/lerna-changelog@6.0.0(release-it@16.3.0):
-    resolution: {integrity: sha512-/1xNLriHKKTdM+/LSQIng5V25gipw0brAXtWVQcOBR63NmW/Ftnd2IJpnM5WzFkOCcL9hoqc8rcIMMv1EOcaIg==}
+  /@release-it-plugins/lerna-changelog@6.1.0(release-it@16.3.0):
+    resolution: {integrity: sha512-zcgiUHiQkqAo1p5HN3xw6+0zmgRs1wzveRreC4CTNs2vErW8L5sCkEZQfSJLd918q+GR43L1/HudjlsiKQK8QA==}
     engines: {node: '>= 16'}
     peerDependencies:
-      release-it: ^14.0.0 || ^15.1.3 || ^16.0.0
+      release-it: ^14.0.0 || ^15.1.3 || ^16.0.0 || ^17.0.0
     dependencies:
       execa: 5.1.1
       lerna-changelog: 2.2.0
@@ -4374,7 +4374,7 @@ packages:
     engines: {node: ^4.5 || 6.* || >= 7.*}
     dependencies:
       broccoli-plugin: 1.3.1
-      mkdirp: 0.5.5
+      mkdirp: 0.5.6
 
   /broccoli-filter@1.3.0:
     resolution: {integrity: sha512-VXJXw7eBfG82CFxaBDjYmyN7V72D4In2zwLVQJd/h3mBfF3CMdRTsv2L20lmRTtCv1sAHcB+LgMso90e/KYiLw==}
@@ -4383,7 +4383,7 @@ packages:
       broccoli-plugin: 1.3.1
       copy-dereference: 1.0.0
       debug: 2.6.9
-      mkdirp: 0.5.5
+      mkdirp: 0.5.6
       promise-map-series: 0.2.3
       rsvp: 3.6.2
       symlink-or-copy: 1.3.1
@@ -4503,7 +4503,7 @@ packages:
       hash-for-dep: 1.5.1
       heimdalljs: 0.2.6
       heimdalljs-logger: 0.1.10
-      mkdirp: 0.5.5
+      mkdirp: 0.5.6
       promise-map-series: 0.2.3
       rimraf: 2.7.1
       rsvp: 3.6.2
@@ -4632,7 +4632,7 @@ packages:
     resolution: {integrity: sha1-vGmQXtejga0yXMDQLe0HEyjr8/M=}
     dependencies:
       broccoli-caching-writer: 2.3.1
-      mkdirp: 0.5.5
+      mkdirp: 0.5.6
       rsvp: 3.6.2
       sri-toolbox: 0.2.0
       symlink-or-copy: 1.3.1
@@ -5882,7 +5882,7 @@ packages:
     dev: true
 
   /depd@1.1.2:
-    resolution: {integrity: sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak=}
+    resolution: {integrity: sha512-7emPTl6Dpo6JRXOXjLRxck+FlLRX5847cLKEn00PLAgc3g2hTZZgr+e4c2v6QpSmLeFP3n5yUo7ft6avBK/5jQ==}
     engines: {node: '>= 0.6'}
     dev: true
 
@@ -5893,11 +5893,6 @@ packages:
 
   /deprecation@2.3.1:
     resolution: {integrity: sha512-xmHIy4F3scKVwMsQ4WnVaS8bHOx0DmVwRywosKhaILI0ywMDWPtBSku2HNxRvF7jtwDRsoEwYQSfbxj8b7RlJQ==}
-    dev: true
-
-  /dequal@2.0.2:
-    resolution: {integrity: sha512-q9K8BlJVxK7hQYqa6XISGmBZbtQQWVXSrRrWreHC94rMt1QL/Impruc+7p2CYSYuVIUr+YCt6hjrs1kkdJRTug==}
-    engines: {node: '>=6'}
     dev: true
 
   /dequal@2.0.3:
@@ -5923,11 +5918,6 @@ packages:
   /detect-newline@3.1.0:
     resolution: {integrity: sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA==}
     engines: {node: '>=8'}
-    dev: true
-
-  /diff@5.0.0:
-    resolution: {integrity: sha512-/VTCrvm5Z0JGty/BWHljh+BAiw3IK+2j87NGMu8Nwc/f48WoDAC395uomO9ZD117ZOBaHmkX1oyLvkVM/aIT3w==}
-    engines: {node: '>=0.3.1'}
     dev: true
 
   /diff@5.1.0:
@@ -8052,7 +8042,7 @@ packages:
       - supports-color
 
   /fs.realpath@1.0.0:
-    resolution: {integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=}
+    resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
 
   /fsevents@2.3.2:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
@@ -8636,10 +8626,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /http-cache-semantics@4.1.0:
-    resolution: {integrity: sha512-carPklcUh7ROWRK7Cv27RPtdhYhUsela/ue5/jKzjegVvXDqM2ILE9Q2BGn9JZJh1g87cp56su/FgQSzcWS8cQ==}
-    dev: true
-
   /http-cache-semantics@4.1.1:
     resolution: {integrity: sha512-er295DKPVsV82j5kw1Gjt+ADA/XYHsajl82cGNQG2eyoPkvgUhX+nDIyelzhIWbbsXP39EHcI6l5tYs2FYqYXQ==}
     dev: true
@@ -8806,7 +8792,7 @@ packages:
     dev: true
 
   /imurmurhash@0.1.4:
-    resolution: {integrity: sha1-khi5srkoojixPcT7a21XbyMUU+o=}
+    resolution: {integrity: sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==}
     engines: {node: '>=0.8.19'}
     dev: true
 
@@ -8824,7 +8810,7 @@ packages:
     engines: {node: '>=14.0.0'}
 
   /inflight@1.0.6:
-    resolution: {integrity: sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk=}
+    resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
     dependencies:
       once: 1.4.0
       wrappy: 1.0.2
@@ -8929,10 +8915,6 @@ packages:
   /invert-kv@3.0.1:
     resolution: {integrity: sha512-CYdFeFexxhv/Bcny+Q0BfOV+ltRlJcd4BBZBYFX/O0u4npJrgZtIcjokegtiSMAvlMTJ+Koq0GBCc//3bueQxw==}
     engines: {node: '>=8'}
-    dev: true
-
-  /ip@1.1.5:
-    resolution: {integrity: sha512-rBtCAQAJm8A110nbwn6YdveUnuZH3WrC36IwkRXxDnq53JvXA2NVQvB7IHyKomxK1MJ4VDNw3UtFDdXQ+AvLYA==}
     dev: true
 
   /ip@1.1.8:
@@ -9335,7 +9317,7 @@ packages:
     dev: true
 
   /isexe@2.0.0:
-    resolution: {integrity: sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=}
+    resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
   /isobject@2.1.0:
     resolution: {integrity: sha1-8GVWEJaj8dou9GJy+BXIQNh+DIk=}
@@ -9624,7 +9606,7 @@ packages:
       make-fetch-happen: 9.1.0
       p-map: 3.0.0
       progress: 2.0.3
-      yargs: 17.3.1
+      yargs: 17.7.2
     transitivePeerDependencies:
       - bluebird
       - supports-color
@@ -9732,7 +9714,7 @@ packages:
     dev: true
 
   /lodash._reinterpolate@3.0.0:
-    resolution: {integrity: sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0=}
+    resolution: {integrity: sha512-xYHt68QRoYGjeeM/XOE1uJtvXQAgvszfBhjV4yvsQH0u2i9I6cI6c6/eG4Hh3UAOVn0y/xAXwmTzEay49Q//HA==}
 
   /lodash.assignin@4.2.0:
     resolution: {integrity: sha512-yX/rx6d/UTVh7sSVWVSIMjfnz95evAgDFdb1ZozC35I9mSFCkmzptOzevxjgbQUsc78NR44LVHWjsoMQXy9FDg==}
@@ -9930,7 +9912,7 @@ packages:
     dependencies:
       agentkeepalive: 4.2.1
       cacache: 15.3.0
-      http-cache-semantics: 4.1.0
+      http-cache-semantics: 4.1.1
       http-proxy-agent: 4.0.1
       https-proxy-agent: 5.0.0
       is-lambda: 1.0.1
@@ -10462,12 +10444,6 @@ packages:
       is-extendable: 1.0.1
     dev: true
 
-  /mkdirp@0.5.5:
-    resolution: {integrity: sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==}
-    hasBin: true
-    dependencies:
-      minimist: 1.2.8
-
   /mkdirp@0.5.6:
     resolution: {integrity: sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==}
     hasBin: true
@@ -10818,7 +10794,7 @@ packages:
     dev: true
 
   /once@1.4.0:
-    resolution: {integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=}
+    resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
     dependencies:
       wrappy: 1.0.2
 
@@ -11159,7 +11135,7 @@ packages:
     dev: true
 
   /path-is-absolute@1.0.1:
-    resolution: {integrity: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=}
+    resolution: {integrity: sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==}
     engines: {node: '>=0.10.0'}
 
   /path-key@2.0.1:
@@ -11398,7 +11374,7 @@ packages:
     dev: true
 
   /promise-inflight@1.0.1:
-    resolution: {integrity: sha1-mEcocL8igTL8vdhoEputEsPAKeM=}
+    resolution: {integrity: sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==}
     peerDependencies:
       bluebird: '*'
     peerDependenciesMeta:
@@ -12475,7 +12451,7 @@ packages:
     dependencies:
       agent-base: 6.0.2
       debug: 4.3.4
-      socks: 2.6.2
+      socks: 2.7.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -12489,14 +12465,6 @@ packages:
       socks: 2.7.1
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /socks@2.6.2:
-    resolution: {integrity: sha512-zDZhHhZRY9PxRruRMR7kMhnf3I8hDs4S3f9RecfnGxvcBHQcKcIH/oUcEWffsfl1XxdYlA7nnlGbbTvPz9D8gA==}
-    engines: {node: '>= 10.13.0', npm: '>= 3.0.0'}
-    dependencies:
-      ip: 1.1.5
-      smart-buffer: 4.2.0
     dev: true
 
   /socks@2.7.1:
@@ -13024,7 +12992,7 @@ packages:
     resolution: {integrity: sha512-yYrrsWnrXMcdsnu/7YMYAofM1ktpL5By7vZhf15CrXijWWrEYZks5AXBudalfSWJLlnen/QUJUB5aoB0kqZUGA==}
     engines: {node: '>=6.0.0'}
     dependencies:
-      mkdirp: 0.5.5
+      mkdirp: 0.5.6
       rimraf: 2.6.3
     dev: true
 
@@ -13350,7 +13318,7 @@ packages:
     dependencies:
       debug: 4.3.4
       fs-tree-diff: 2.0.1
-      mkdirp: 0.5.5
+      mkdirp: 0.5.6
       quick-temp: 0.1.8
       walk-sync: 0.3.4
     transitivePeerDependencies:
@@ -13680,8 +13648,8 @@ packages:
     engines: {node: '>=8'}
     hasBin: true
     dependencies:
-      dequal: 2.0.2
-      diff: 5.0.0
+      dequal: 2.0.3
+      diff: 5.1.0
       kleur: 4.1.4
       sade: 1.8.1
     dev: true
@@ -14007,7 +13975,7 @@ packages:
     dev: true
 
   /wrappy@1.0.2:
-    resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
+    resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
 
   /write-file-atomic@3.0.3:
     resolution: {integrity: sha512-AvHcyZ5JnSfq3ioSyjrBkH9yW4m7Ayk8/9My/DD9onKeu/94fwrMocemO2QAJFAlnnDN+ZDS+ZjAR5ua1/PV/Q==}
@@ -14099,11 +14067,6 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /yargs-parser@21.0.1:
-    resolution: {integrity: sha512-9BK1jFpLzJROCI5TzwZL/TU4gqjK5xiHV/RfWLOahrjAko/e4DJkRDZQXfvqAsiZzzYhgAzbgz6lg48jcm4GLg==}
-    engines: {node: '>=12'}
-    dev: true
-
   /yargs-parser@21.1.1:
     resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
     engines: {node: '>=12'}
@@ -14132,7 +14095,7 @@ packages:
       require-directory: 2.1.1
       string-width: 4.2.3
       y18n: 5.0.8
-      yargs-parser: 21.0.1
+      yargs-parser: 21.1.1
     dev: true
 
   /yargs@17.7.2:
