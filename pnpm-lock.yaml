@@ -27,8 +27,8 @@ importers:
         specifier: ^1.8.7
         version: 1.8.7
       decorator-transforms:
-        specifier: ^1.0.3
-        version: 1.0.3(@babel/core@7.23.7)
+        specifier: ^1.1.0
+        version: 1.1.0(@babel/core@7.23.7)
       ember-animated:
         specifier: ^1.0.0 || ^2.0.0
         version: 2.0.0(@babel/core@7.23.7)(@ember/test-helpers@3.2.1)(ember-source@5.5.0)
@@ -5793,8 +5793,8 @@ packages:
       mimic-response: 3.1.0
     dev: true
 
-  /decorator-transforms@1.0.3(@babel/core@7.23.7):
-    resolution: {integrity: sha512-kY+IuCYwp1WvWWDrT+NmqckV4ZZ4wBDIvbbvhQBNUZYLxztLpN/P+hBhmVXN/1G95U61yYWewJEdJ+o4Sm8Tng==}
+  /decorator-transforms@1.1.0(@babel/core@7.23.7):
+    resolution: {integrity: sha512-n3WCgc3PB2t9mLV4SJd87IjTbKeFUGw2sU5eEBYczSmcvj3guX4eMW4XOowlQqGk7I/da6+bwv1ydw1ZtNqWaw==}
     dependencies:
       '@babel/plugin-syntax-decorators': 7.23.3(@babel/core@7.23.7)
       babel-import-util: 2.0.1
@@ -6049,7 +6049,7 @@ packages:
       '@embroider/addon-shim': 1.8.7
       '@embroider/macros': 1.13.4
       assert-never: 1.2.1
-      decorator-transforms: 1.0.3(@babel/core@7.23.7)
+      decorator-transforms: 1.1.0(@babel/core@7.23.7)
       ember-element-helper: 0.8.5(ember-source@5.5.0)
     transitivePeerDependencies:
       - '@babel/core'
